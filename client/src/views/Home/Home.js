@@ -90,10 +90,10 @@ function Home() {
   return (
 
     <div>
-      <h1 style={{textAlign:'center', margin:"20"}}>Hello {user.fullname}</h1>
+      <h2 style={{textAlign:'center', margin:"20"}}>Hello {user.fullname}</h2>
 
 
-     <h1 style={{textAlign:'center', margin:"20"}}> Let's short the link Quickly in 2 minutes⌚</h1>
+     <h2 style={{textAlign:'center', margin:"20"}}> Let's short the link Quickly in 2 minutes⌚</h2>
 
      <button className=' btn-logout' onClick={()=>{
       localStorage.clear()

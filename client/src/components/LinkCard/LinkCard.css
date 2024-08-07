@@ -8,8 +8,8 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 2px 3px  #8eadcd;
-    padding: 38px;
-    width: 550px;
+    padding: 20px;
+    width: 450px;
     text-align: center;
     margin: 20px;
     position: relative;
@@ -18,14 +18,15 @@
 
 .card-title {
     font-size: 1.5em;
-    margin: 0 0 10px;
+   text-align: center;
+   margin-top: -15px;
 }
 
 .card-url a {
     color: #007bff;
     text-decoration: none;
-    font-size: 18px;
-    margin: 0;
+    font-size: 15px;
+    margin-left: 5px;
     
 }
 
@@ -43,10 +44,10 @@
 
 .card-date {
     color: #777;
-    font-size: 1em;
+    font-size: 0.8em;
     margin:0;
     position: absolute;
-    left: 28px;
+    left: 24px;
     bottom:10px ;
 }
 
@@ -56,8 +57,8 @@
     margin: 5px 0;
     position: absolute;
     right: 30px;
-    bottom: 7px;
-    font-size: 1em;
+    bottom: 5px;
+    font-size: 0.8em;
 }
 .img{
     height: 35px;
@@ -65,18 +66,19 @@
     
 }
  .img-t{
-    height: 30px; 
+    height: 30px;     
     margin-top: 7px;
+
  }
 
 
 .url{
     display: flex;
-    flex-direction: row;
-    margin: 0 ;
-    padding-left: 110px;
-    
-    
-    
-
+    margin-bottom: 0;   
+    margin-top: -20px; 
+}
+.slug-url{
+    display: flex;
+    margin-bottom: 0; 
+    margin-top: -30px;
 }
