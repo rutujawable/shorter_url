@@ -158,7 +158,7 @@ function Home() {
      
      <div className='links-container'>
     
-     <h1 className='allLinks'> All Links</h1>
+     <h2 className='allLinks'> All Links</h2>
       <div>
       {
       links.map((link,i)=>{
