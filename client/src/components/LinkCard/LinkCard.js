@@ -9,7 +9,7 @@ function LinkCard( {title,target,slug,views,createdAt}) {
   return (
     <div>
       <div class="card">
-    <h2 class="card-title">{title}</h2>
+    <h3 class="card-title">{title}</h3>
 
     <div className='slug-url'>
        <img className='img' src={link}></img> 
