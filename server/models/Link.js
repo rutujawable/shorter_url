@@ -15,13 +15,20 @@ const linkSchema = new Schema({
     target:{
         type:String,
         required:true,
+ },
 
-    },
     views:{
  type: Number,
  default:0
 
-    }
+    },
+    
+    
+    user:{
+        type:Schema.Types.ObjectId,
+        ref:"User"
+      }
+
 
 },
 {

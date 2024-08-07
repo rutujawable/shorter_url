@@ -3,10 +3,9 @@ import mongoose from "mongoose"
 import cors from "cors"
 import dotenv from "dotenv"
 dotenv.config()
+import {postLink, getSlug,getLinks,getUserLinks} from "./controllers/link.js"
+import { postLogin, postSignup } from "./controllers/user.js"
 
-import nodemon from "nodemon"
-import {postLink, getSlug} from "./controllers/link.js"
-import Link from "./models/Link.js"
 
 
 const app = express()
@@ -30,7 +29,8 @@ else{
  mongoConnection();
 
 
- app.get("/health",(req,res)=>{
+
+app.get("/health",(req,res)=>{
   res.json({
       success:true,
       message:"server is running"
@@ -38,16 +38,25 @@ else{
   })
 })
 
+app.get("/userlinks",getUserLinks)
+
 app.post("/link", postLink)
+app.get("/Links",getLinks)
+
 
 app.get("/:slug",getSlug)
 
+app.post("/signup", postSignup)
+
+app.post("/login",postLogin)
 
 
 
 
 
- 
+
+
+
 
   app.listen(port, (req,res)=>{
     console.log(`server is running on port${port}`)
