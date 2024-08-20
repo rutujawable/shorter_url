@@ -67,41 +67,137 @@
   
   }
 
-  .allLinks{
-   text-align: center;
-  
-   
-  }
 
   .links-container{
    overflow-y: scroll;
-   max-height: 700px ;
-   background-color: #9ab0c7;
+   max-height: 300px ;
+   position: relative;
+   
    border-radius: 10px;
-   margin-top: 20px;
+   margin-top: 15px;
+
   }
+
+  .links-container::-webkit-scrollbar {
+   display: none;
+ }
+
    .allLinks {
       position: sticky;
-      top: 0; /* Sticks to the top of the container */
-      background-color: #fff; /* Optional, to make sure it stands out */
+      top: 40px; 
+      background-color: #fff; 
       padding: 10px;
       text-align: center;
-      z-index: 1000; /* Ensure it stays above other content */
-      background-color: #9ab0c7;
+      background-color: #ffc6c7;
+      z-index: 1000;
+      text-align: center;
+  
+      
+    }
+   
+
+   
+
+    .div{
+    
+       /* Sticks to the top of the container */
+      background-color: #fff; /* Optional, to make sure it stands out */
+      padding-top: 80px;
+      text-align: center; /* Ensure it stays above other content */
+      background-color: #ffc6c7;
+      
       
     }
 
-    .btn-logout{
-      position: fixed;
-      top: 10px;
-      right: 10px;
-      border: none;
-      background-color: #ffc6c7;
-      cursor: pointer;
-      font-size: 20px;
-      font-family: "Poetsen One", sans-serif;
- font-weight: 400;
- font-style: normal;
-    }
+    .links-container {
+        overflow: hidden; /* Hides scrollbar */
+        max-height: 300px;
+        position: relative;
+        border-radius: 10px;
+        margin-top: 15px;
+      }
+      
+      /* Webkit Browsers (Chrome, Safari) */
+      .links-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar */
+      }
+      
+      /* Firefox */
+      .links-container {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      
     
-  
+  /* Existing styles */
+
+/* Media Query for Tablets and Small Screens */
+@media (max-width: 768px) {
+   .link-form {
+       width: 90%;
+       padding: 30px;
+   }
+
+   .link-form-input {
+       font-size: 14px;
+       height: 40px;
+   }
+
+   .btn {
+       width: 150px;
+       font-size: 12px;
+   }
+
+   .main-container {
+       flex-direction: column;
+       align-items: center;
+   }
+
+   .links-container {
+       max-height: 250px;
+   }
+
+   .allLinks {
+       font-size: 16px;
+   }
+
+   .div {
+    padding-top: 170px;
+   }
+}
+
+/* Media Query for Mobile Screens */
+@media (max-width: 480px) {
+   .link-form {
+       width: 100%;
+       padding: 20px;
+   }
+
+   .link-form-input {
+       font-size: 12px;
+       height: 35px;
+   }
+
+   .btn {
+       width: 120px;
+       font-size: 11px;
+   }
+
+   .card {
+       width: 100%;
+       margin: 10px 0;
+       padding: 15px;
+   }
+
+   .card-title {
+       font-size: 1em;
+   }
+
+   .card-url a, .card-target a {
+       font-size: 11px;
+   }
+
+   .card-date, .card-views {
+       font-size: 0.6em;
+   }
+}

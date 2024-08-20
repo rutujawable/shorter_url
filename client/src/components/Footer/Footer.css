@@ -1,0 +1,112 @@
+.footer-container_a {
+    background-color: black;
+    padding: 20px 40px; /* Padding for better spacing */
+    color: white;
+    margin-top: 20px;
+    width: 98%;
+    display: flex;
+    justify-content: space-between; /* Ensures space between items */
+    flex-wrap: wrap;
+}
+
+.links {
+    padding: 15px;
+    margin: 10px;
+    width: 150px;
+    color: white;
+}
+
+.links-components {
+    display: block;
+    padding: 6px;
+    text-decoration: none;
+    color: white;
+}
+
+.icons-img {
+    height: 35px;
+    margin: 15px;
+}
+
+.icons {
+    margin-top: 20px;
+}
+
+.contact-images {
+    height: 25px;
+}
+
+.contact {
+    width: 200px;
+    padding: 10px;
+    margin: 0 30px;
+}
+
+.contact-components {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    
+}
+
+.contact_names {
+    padding: 6px;
+    text-decoration: none;
+    vertical-align: top;
+}
+
+.image {
+    height: 50px;
+    margin: 10px;
+}
+
+.img-content {
+    height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.img-contain {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.contact-link {
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin: 5px;
+}
+
+.color {
+    color: white;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.b{
+    margin: 0 90px;
+
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footer-container_a {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .links {
+        width: 100%;
+        margin: 15px 0; /* Adjusted margin for better spacing */
+    }
+
+    .image {
+        width: 100px;
+        height: auto;
+        margin: 10px 0; /* Adjusted margin for better spacing */
+    }
+}

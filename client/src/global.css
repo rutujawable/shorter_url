@@ -1,64 +1,109 @@
-.signup-form{
+.signup-form {
     display: block;
-    margin: 80px auto;
-    padding: 40px;
-    width :500px;
+    margin: 0 auto;
+    padding: 30px;
+    width: 90%;
+    max-width: 500px;
     background-color: white;
     border-radius: 20px;
-    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Ensure padding is included in the width */
+    margin-top: 10px;
 }
 
-.user-input{
+.user-input {
     display: block;
-    margin: 30px auto;
-    width: 100%;
-   
-    padding: 10px 8px;
+    margin: 15px 0;
+    width: calc(100% - 20px); /* Adjust width with padding */
+    padding: 10px;
     font-family: "Poetsen One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  font-size: 20px;
-
-    
-    
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box; /* Ensure padding is included in the width */
 }
 
-.user-input:focus, .user-input:active{
-    outline: none; 
-    
-    box-shadow: none; 
+.user-input:focus, .user-input:active {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
 }
 
-.btn{
-    margin: 0 auto;
+.btn {
+    margin: 20px auto;
     display: block;
-    font-size: 20px;
-    
-    border-radius: 50px;
-    width: 200px;
+    font-size: 16px;
+    height: 28px; /* Adjust height for better touch targets */
+    border-radius: 20px;
+    width: 60%;
+    max-width: 130px;
     background-color: #007bff;
     color: white;
-    
-  font-family: "Poetsen One", sans-serif;
-  font-weight: 400;
-  font-style: normal;
- 
- }
- 
- .btn:hover{
-    transform: scaleY(1.3);
-    transition: 1.3s;
-    box-shadow: 2px 2px 5px 2px rgb(206, 203, 203);
-    background-color: #ff8ba7;
-    
- }
- 
- .link{
+    border: none;
+    cursor: pointer;
+    font-family: "Poetsen One", sans-serif;
+    box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.btn:hover {
+    transform: scaleY(1.1);
+    transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #0056b3; 
+}
+
+.link {
     text-align: center;
-    font-size: 20px;
-    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 20px;
     display: block;
     text-decoration: none;
- }
+    color: #007bff;
+}
 
-  
+.link:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries */
+@media (max-width: 600px) {
+    .signup-form {
+        padding : 20px; /* Adjusted padding for better spacing */
+        width: 95%;
+        margin-top: 80px;
+    }
+
+    .user-input {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    .link {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .signup-form {
+        padding: 10px;
+        width: 100%;
+        
+        
+    }
+
+    .user-input {
+        font-size: 13px;
+    }
+
+    .btn {
+        font-size: 13px;
+        width: 90%;
+    }
+
+    .link {
+        font-size: 13px;
+    }
+}

@@ -7,6 +7,9 @@ import toast, {Toaster} from "react-hot-toast"
 import { useEffect } from 'react'
 import LinkCard from '../../components/LinkCard/LinkCard.js'
 
+import Footer from '../../components/Footer/Footer.js'
+import Header from '../../components/Header/Header.js'
+
 
 
 function Home() {
@@ -88,24 +91,22 @@ function Home() {
     
   }
   return (
+    
 
     <div>
-      <h2 style={{textAlign:'center', margin:"20"}}>Hello {user.fullname}</h2>
+
+  <Header/>
+
+      <div style={{textAlign:"center", margin:"20px"}} className='div'>
+      <h2 style={{ margin:"20", display:"inline"}}>Hello {user.fullname}👋</h2>
 
 
-     <h2 style={{textAlign:'center', margin:"20"}}> Let's short the link Quickly in 2 minutes⌚</h2>
+     <h2 style={{ margin:"20", display:"inline"}}> Let's short the link Quickly ⌚</h2>
+     
+     
+     </div>
 
-     <button className=' btn-logout' onClick={()=>{
-      localStorage.clear()
-      toast.success("log out successfully")
-
-      setTimeout(()=>{
-        window.location.href="/login"
-      },
-      200)
-     }
-     } >logout
-     </button>
+     
 
     <div className='main-container'>
 
@@ -155,10 +156,13 @@ function Home() {
      <button type='button' className='btn' onClick={shortURL}> short the URL</button>
      </form>
 
+
+     <div>
+     <h2 className='allLinks'> All Links</h2>
      
      <div className='links-container'>
     
-     <h2 className='allLinks'> All Links</h2>
+     
       <div>
       {
       links.map((link,i)=>{
@@ -191,7 +195,7 @@ function Home() {
          
       </div> 
      
-
+      </div>
 
       
 
@@ -200,10 +204,11 @@ function Home() {
 
        
 
-
+     
 
      <Toaster/>
     </div>
+    <Footer/>
     </div>
   )
 }

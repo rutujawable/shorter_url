@@ -1,0 +1,35 @@
+.image{
+    height: 60px;
+}
+.login-heading{
+    font-size: 30px;
+    display: inline;
+    margin-left: 40%;
+    margin-top: 150px;
+}
+
+ /* Add this to your Login.css or global CSS file */
+.login-h {
+    padding-top: 20px; /* Adjust this value according to your header's height */
+  }
+  
+
+
+
+
+@media (max-width: 600px){
+    .login-heading{
+        font-size: 30px;
+        margin-right: 70%;
+        display: inline;
+    }
+    .image{
+        height: 40px;
+        width: 40px;
+    }
+    .login-h{
+        text-align: center;
+       
+
+    }
+}

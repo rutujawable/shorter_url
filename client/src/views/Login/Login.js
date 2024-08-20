@@ -5,9 +5,17 @@ import axios from 'axios'
 import toast, {Toaster} from 'react-hot-toast'
 import { Link } from 'react-router-dom'
 import "./../../global.css"
+import  key from "./key.png"
+import  "./Login.css"
+import Header from '../../components/Header/Header'
+import Footer from '../../components/Footer/Footer'
+
+
 
 
 function Login() {
+
+  
 
   const [userLogin, setUserLogin] = useState(
     {
@@ -51,8 +59,13 @@ else{
 
 
   return(
-
     <div>
+      <Header/>
+
+    <div className='login-h'>
+
+    
+      
         <form className='signup-form'>
 
           <input type='email'
@@ -94,10 +107,13 @@ else{
 
 
         <Link className='link' to="/signup"> Don't have an account? signup</Link>
-
+     
+     
 
     <Toaster/>
 
+    </div>
+    <Footer/>
     </div>
   )
 

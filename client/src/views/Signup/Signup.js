@@ -7,6 +7,8 @@ import toast from 'react-hot-toast'
 import { Toaster } from 'react-hot-toast'
 import {Link} from "react-router-dom"
 import "./../../global.css"
+import Footer from '../../components/Footer/Footer'
+import Header from '../../components/Header/Header'
 
 
 function Signup() {
@@ -25,6 +27,8 @@ function Signup() {
       "password":user.password,
       "dob":user.dob
    })
+
+   
    console.log(response.data.data)
 
    if(response.data.success){
@@ -45,6 +49,8 @@ function Signup() {
 
   return (
     <div>
+
+      <Header/>
      <form className='signup-form'>
 
         <input type='text'
@@ -99,7 +105,8 @@ function Signup() {
 
      <Link to="/login" className='link'> Already have an account? login</Link>
     
-
+    <Footer/>
+    
    <Toaster/>
 
     </div>
